@@ -1,0 +1,42 @@
+Overview
+  This script is designed to evaluate the Farmland Classifier model on a single image to determine if it represents farmland or not. The model, previously trained on a dataset of labeled images, will classify an input image and provide a confidence score for its prediction.
+
+Prerequisites
+  Python 3.x
+  TensorFlow 2.x
+  NumPy
+  Python Imaging Library (Pillow)
+
+Installation
+  Ensure that you have the necessary libraries installed:
+  pip install tensorflow numpy Pillow
+
+Configuration
+  Model Path: Path to the pre-trained Farmland Classifier model.
+  Example: farmland_classifier_model.keras
+  Image Path: Path to the image you want to classify.
+  Example: /Users/nishanttiwari/Desktop/output_256_1024_328-1343_quad.tif
+
+Features
+  Model Loading: Automatically loads the pre-trained Farmland Classifier model.
+  Image Preprocessing: Adjusts the input image to the required dimensions and format for the model.
+  Prediction and Classification: Utilizes the model to predict the category of the image and outputs both the classification label and confidence.
+
+Usage
+  Set Image Path: Update the script with the path to the image you want to classify.
+  Execute the Script: Run the script to process the image and output the classification results.
+  View Output: The script will display the predicted label and the confidence of the prediction.
+
+Output
+The script outputs:
+
+  Classification Label: Indicates whether the image is classified as 'Positive' (farmland) or 'Negative' (non-farmland).
+  Confidence Score: Provides the confidence level of the prediction, expressed as a decimal.
+
+Running the Script
+  Run the script from your Python environment using the following command:
+  python test_single_image.py
+
+Conclusion
+  This utility allows for quick testing of individual images using the Farmland Classifier, making it suitable for evaluating model performance or integrating into larger workflows for image classification.
+
