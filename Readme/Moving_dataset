@@ -1,0 +1,55 @@
+Farmland Classifier Project
+
+Overview
+  This project involves training a convolutional neural network (CNN) using TensorFlow to distinguish between farmland and non-farmland images. The model is trained on a dataset of labeled images and utilizes data augmentation to improve generalization.
+
+Prerequisites
+  Python 3.x
+  TensorFlow 2.x
+  NumPy
+  Matplotlib
+  Python Imaging Library (Pillow)
+
+Installation
+  Install the required libraries using pip:
+  pip install tensorflow numpy matplotlib Pillow
+
+Configuration
+  Model Architecture: Custom CNN with multiple convolutional, pooling, and dense layers.
+
+Data Paths:
+  Train Directory: Path to the training dataset.
+    Example: /Users/nishanttiwari/Desktop/farmland_classifier/dataset/train
+  Validation Directory: Path to the validation dataset.
+    Example: /Users/nishanttiwari/Desktop/farmland_classifier/dataset/validation
+
+Batch Size: Number of images processed per model training step.
+Example: 5
+
+Epochs: Number of complete passes through the entire dataset during training.
+Example: 5
+
+Features
+  ImageDataGenerator: Leverages TensorFlow's data augmentation capabilities to enhance model training.
+  Automated Training Loop: Facilitates multiple epochs of training with detailed logging.
+  Model Saving: Automatically saves the trained model for later use or deployment.
+
+Usage
+  Configure Paths and Parameters: Set the paths to your training and validation directories and adjust the batch size and epochs as needed.
+  Run the Script: Execute the script to start training the model. The script will handle data loading, augmentation, and model training.
+  Monitor Output: Observe the training progress and accuracy metrics in the console output.
+
+Output
+  Model File: The trained model is saved in Keras format, allowing for easy loading and inference.
+  Example Output File: farmland_classifier_model.keras
+
+Training Metrics: Displays loss and accuracy for both training and validation data during each epoch.
+  Running the Script
+Run the script from your Python environment using the following command:
+
+bash
+Copy code
+python train_farmland_classifier.py
+Conclusion
+The Farmland Classifier project showcases the use of advanced neural network techniques for image classification in TensorFlow. It is designed to be adaptable for similar image classification tasks, supporting extensive customization for academic, industrial, or personal projects.
+
