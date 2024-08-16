@@ -1,0 +1,55 @@
+Farmland Classifier Training
+  Overview
+    This project involves training a Convolutional Neural Network (CNN) to classify images as either farmland or not. The model is trained using TensorFlow on a dataset that consists of labeled images categorized into 'positive' (farmland) and 'negative' (non-farmland).
+  
+Prerequisites
+  Python 3.x
+  TensorFlow 2.x
+  TensorFlow Keras
+  NumPy
+
+Installation
+  Install the required Python packages using pip:
+  pip install tensorflow numpy
+
+Configuration
+  Training Directory: Path to the training dataset.
+    Example: /Users/nishanttiwari/Desktop/farmland_classifier/dataset/train
+  Validation Directory: Path to the validation dataset.
+    Example: /Users/nishanttiwari/Desktop/farmland_classifier/dataset/validation
+
+  Number of Epochs: The number of training cycles. This is hardcoded in the script as 5.
+  
+Model Architecture
+  The CNN includes several layers designed to efficiently recognize and classify features in images:
+
+  Convolutional Layers: Extract features from the image.
+  MaxPooling Layers: Reduce the spatial dimensions of the output from the convolutional layers.
+  Flatten Layer: Converts the 2D feature maps into a 1D feature vector.
+  Dense Layers: Fully connected layers for classification.
+  Dropout Layer: Reduces overfitting by randomly setting a fraction of input units to 0 at each update during training.
+
+Features
+  Image Augmentation: Enhances the dataset by performing random transformations to the training images, thereby improving the generalization of the model.
+  Model Training: Utilizes the Keras API to train the model with automated batching, epochs, and validation.
+  Model Saving: Saves the trained model for later use or deployment.
+
+Usage
+  Prepare Your Dataset: Ensure your dataset is structured correctly in the specified directories.
+  Run the Training Script: Execute the script to start the training process.
+
+Save the Model: The trained model is saved as farmland_classifier_model.keras, which can be used for deploying or further evaluation.
+
+Output
+  Trained Model: farmland_classifier_model.keras
+
+  Training Output: Displays the training and validation loss and accuracy for each epoch.
+
+Running the Script
+  To train your model, navigate to the directory containing the script and run:
+
+  python train_farmland_classifier.py
+
+Conclusion
+  This training script is a key component of the Farmland Classifier project, enabling the development of a robust model capable of classifying images based on their likelihood of representing farmland.
+
