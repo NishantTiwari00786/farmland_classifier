@@ -1,5 +1,6 @@
 
 # Nationwide Farmland Identification Dataset - CNN
+https://bit.ly/Nishant_MSRIP - Detailed presentation with explanations for Project Pipeline and Applications.
 
 This repository contains essential Python scripts for the **Nationwide Farmland Identification Dataset** project, which utilizes geospatial data and machine learning to classify farmland and non-farmland areas using satellite imagery. This project leverages both a **Convolutional Neural Network (CNN)** and META's **Segment Anything Model (SAM)** for comprehensive land analysis.
 
